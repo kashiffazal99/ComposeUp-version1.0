@@ -1,0 +1,217 @@
+<html>
+<head>
+  <title>SweetAlert</title>
+  
+  <!--link rel="stylesheet" href="alert_lib/example.css"-->
+  <script src="alert_lib/jquery.min.js"></script>
+
+  <!-- This is what you need -->
+  <script src="alert_lib/sweet-alert.min.js"></script>
+  <link rel="stylesheet" href="alert_lib/sweet-alert.css">
+  <!--.......................-->
+
+</head>
+
+<body>
+
+<ul class="examples">
+
+
+	
+	
+	<li class="title-text">
+		<div class="ui">
+			<p>A title with a text under</p>
+			<button>Try me!</button>
+		</div>
+		<pre>swal(<span class="str">"Here's a message!"</span>, <span class="str">"It's pretty, isn't it?"</span>)</pre>
+	</li>
+
+	
+	
+
+	
+
+
+	
+	
+	<li class="warning cancel">
+		<div class="ui">
+			<p>... and by passing a parameter, you can execute something else for "Cancel".</p>
+			<button>Try me!</button>
+		</div>
+		<pre>swal({
+&nbsp;&nbsp;title: <span class="str">"Are you sure?"</span>,
+&nbsp;&nbsp;text: <span class="str">"You will not be able to recover this imaginary file!"</span>,
+&nbsp;&nbsp;type: <span class="str">"warning"</span>,
+&nbsp;&nbsp;showCancelButton: <span class="val">true</span>,
+&nbsp;&nbsp;confirmButtonColor: <span class="str">"#DD6B55"</span>,
+&nbsp;&nbsp;confirmButtonText: <span class="str">"Yes, delete it!"</span>,
+&nbsp;&nbsp;cancelButtonText: <span class="str">"No, cancel plx!"</span>,
+&nbsp;&nbsp;closeOnConfirm: <span class="val">false</span>,
+&nbsp;&nbsp;closeOnCancel: <span class="val">false</span>
+},
+<span class="func"><i>function</i></span>(isConfirm){
+&nbsp;&nbsp;<span class="tag">if</span> (isConfirm) {
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">swal</span>(<span class="str">"Deleted!"</span>, <span class="str">"Your imaginary file has been deleted."</span>, <span class="str">"success"</span>);
+&nbsp;&nbsp;} <span class="tag">else</span> {
+	&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">swal</span>(<span class="str">"Cancelled"</span>, <span class="str">"Your imaginary file is safe :)"</span>, <span class="str">"error"</span>);
+&nbsp;&nbsp;}
+});</pre>
+	</li>
+
+
+
+	<li class="message-html">
+		<div class="ui">
+			<p>An HTML message</p>
+			<button>Try me!</button>
+		</div>
+		<pre>swal({
+&nbsp;&nbsp;title: <span class="str">"HTML &lt;small&gt;Title&lt;/small&gt;!"</span>,
+&nbsp;&nbsp;text: <span class="str">"A custom &lt;span style="color:#F8BB86"&gt;html&lt;span&gt; message."</span>,
+&nbsp;&nbsp;html: <span class="val">true</span>
+});</pre>
+	</li>
+
+	
+	
+	<li class="timer">
+		<div class="ui">
+			<p>A message with auto close timer</p>
+			<button>Try me!</button>
+		</div>
+		<pre>swal({
+&nbsp;&nbsp;title: <span class="str">"Auto close alert!"</span>,
+&nbsp;&nbsp;text: <span class="str">"I will close in 2 seconds."</span>,
+&nbsp;&nbsp;timer: <span class="val">2000</span>,
+&nbsp;&nbsp;showConfirmButton: <span class="val">false</span>
+});</pre>
+	</li>
+
+	
+	
+	<li class="input">
+		<div class="ui">
+			<p>A replacement for the "prompt" function</p>
+			<button>Try me!</button>
+		</div>
+		<pre>swal({
+&nbsp;&nbsp;title: <span class="str">"An input!"</span>,
+&nbsp;&nbsp;text: <span class="str">"Write something interesting:"</span>,
+&nbsp;&nbsp;type: <span class="str">"input"</span>,
+&nbsp;&nbsp;showCancelButton: <span class="val">true</span>,
+&nbsp;&nbsp;closeOnConfirm: <span class="val">false</span>,
+&nbsp;&nbsp;animation: <span class="str">"slide-from-top"</span>
+},
+<span class="func"><i>function</i></span>(inputValue){
+&nbsp;&nbsp;<span class="tag">if</span> (inputValue <span class="tag">===</span> <span class="val">false</span>) <span class="tag">return</span> <span class="val">false</span>;
+&nbsp;&nbsp;
+&nbsp;&nbsp;<span class="tag">if</span> (inputValue <span class="tag">===</span> <span class="str">""</span>) {
+&nbsp;&nbsp;&nbsp;&nbsp;swal.showInputError</span>(<span class="str">"You need to write something!"</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">return</span> <span class="val">false</span>
+&nbsp;&nbsp;}
+&nbsp;&nbsp;
+&nbsp;&nbsp;<span class="func">swal</span>(<span class="str">"Nice!"</span>, <span class="str">"You wrote: "</span> + inputValue, <span class="str">"success"</span>);
+&nbsp;&nbsp;}
+});</pre>
+	</li>
+
+	
+	
+</ul>
+
+
+<script>
+
+
+
+
+
+document.querySelector('ul.examples li.timer button').onclick = function(){
+	swal({
+		title: "Auto close alert!",
+		text: "I will close in 2 seconds.",
+		timer: 1000,
+		showConfirmButton: false
+	});
+};
+
+
+
+document.querySelector('ul.examples li.title-text button').onclick = function(){
+	swal("Here's a message!", "It's pretty, isn't it?");
+};
+
+
+
+
+
+
+
+document.querySelector('ul.examples li.warning.cancel button').onclick = function(){
+	swal({
+		title: "Are you sure?",
+		text: "You will not be able to recover this imaginary file!",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: '#DD6B55',
+		confirmButtonText: 'Yes, delete it!',
+		cancelButtonText: "No, cancel plx!",
+		closeOnConfirm: false,
+		closeOnCancel: false
+	},
+	function(isConfirm){
+    if (isConfirm){
+      swal("Deleted!", "Your imaginary file has been deleted!", "success");
+    } else {
+      swal("Cancelled", "Your imaginary file is safe :)", "error");
+    }
+	});
+};
+
+
+
+
+
+document.querySelector('ul.examples li.message-html button').onclick = function(){
+	swal({
+		title: "HTML <small>Title</small>!",
+		text: 'A custom <span style="color:#F8BB86">html<span> message.',
+		html: true
+	});
+};
+
+
+
+document.querySelector('ul.examples li.input button').onclick = function(){
+	swal({
+		title: "An input!",
+		text: 'Write something interesting:',
+		type: 'input',
+		showCancelButton: true,
+		closeOnConfirm: false,
+		animation: "slide-from-top"
+	}, 
+	function(inputValue){
+		if (inputValue === false) return false;
+
+		if (inputValue === "") {
+			swal.showInputError("You need to write something!");
+			return false;
+		}
+		
+		swal("Nice!", 'You wrote: ' + inputValue, "success");
+		
+	});
+};
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

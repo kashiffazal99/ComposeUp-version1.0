@@ -1,0 +1,36 @@
+body{
+	//border:2px solid red;
+	width:8.27in;
+	height:11.69in;
+	margin:0 auto;
+	font-family:Calibri;
+	font-size:11pt;
+}
+
+table tr td{
+	font-size:11pt;
+}
+
+
+#wrapper{
+	//border:2px solid red;
+	padding:0 0.5in;
+}
+
+p{
+text-align:justify;
+}
+h1{
+	margin:0 auto;
+}
+table tr th{
+	text-align:left;
+	//padding:0px 50px;
+
+}
+
+.th_color th{
+	text-align:center;
+	background:#7f7f7f;
+	color:#fff;
+}

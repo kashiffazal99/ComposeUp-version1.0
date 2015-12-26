@@ -1,0 +1,58 @@
+#payOrderLetter{
+	width:100%;
+	margin:0 auto;
+	//border:2px dotted #999;
+	//border-radius: 15px;
+	//padding:0px 50px 10px 50px;
+	//box-shadow:2px 2px 10px #000;
+}
+#payOrderLetter table{
+	//width:700px;
+	
+}
+#payOrderLetter hr{
+	margin:4px 0px;
+}
+
+#payOrderLetter select{
+	width:350px;
+	height:30px;
+	border:2px solid #999;
+	border-radius:5px;
+	//box-shadow:1px 1px 2px #999;
+	transition: box-shadow 320ms, border 320ms;
+}
+#payOrderLetter select:focus{
+	box-shadow:0px 0px 20px #999;
+	border:2px solid #666;
+}
+
+#payOrderLetter input[type='number'], input[type='text']{
+width:150px;
+padding:3px 10px 3px 10px;
+border: 1px solid #999;
+border-radius:3px;
+margin:1px 0px;
+transition: box-shadow 320ms;
+}
+
+#payOrderLetter input[type='number']{
+padding:3px 0px 3px 10px;
+}
+
+#payOrderLetter input[type='number']:focus, input[type='text']:focus{
+box-shadow:0px 0px 15px #666;
+}
+
+#payOrderLetter #top_table {
+width:100%;
+margin:10px auto;
+padding:8px 15px;
+//border:1px solid #999;
+background-image:URL('../img/bar.gif');
+border-radius:15px;
+//box-shadow:0px 0px 10px #999;
+transition: box-shadow 320ms;
+}
+
+

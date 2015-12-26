@@ -1,0 +1,480 @@
+
+<h1>Creating Cheques</h1>
+		
+<hr>
+<div>
+    <md-tabs class="tab-head" md-selected="data.selectedIndex">
+      <md-tab id="tab1">
+		NIB
+      </md-tab>
+      <md-tab id="tab2">
+		Faysal 
+      </md-tab>
+      <md-tab id="tab3">
+		UBL
+      </md-tab>     
+	  <md-tab id="tab4">
+		Alfalah
+      </md-tab> 
+	  <md-tab id="tab5">
+		MCB
+      </md-tab> 
+	  <md-tab id="tab6">
+		Meezan
+      </md-tab> 
+	  <md-tab id="tab7">
+		Askari
+      </md-tab> 
+	  <md-tab id="tab8">
+		Al-Habib
+      </md-tab> 
+    </md-tabs>
+    <ng-switch on="data.selectedIndex" class="tabpanel-container">
+
+<!-----------------------NIB Bank ------------------------------>       
+<div role="tabpanel" id="tab1-content" aria-labelledby="tab1" ng-switch-when="0" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for NIB Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/nib.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="nib"/>
+
+</form>
+</div> 
+</div>
+<!-----------------------NIB Bank ------------------------------>       
+
+<!-----------------------Faysal Bank ------------------------------>       
+<div role="tabpanel" id="tab2-content" aria-labelledby="tab2" ng-switch-when="1" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for Faysal Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="100" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/faysal.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="faysal"/>
+
+</form>
+</div> 
+</div>
+<!-----------------------Faysal Bank ------------------------------>       
+		        
+        
+<!-----------------------UBL Bank ------------------------------>       
+<div role="tabpanel" id="tab3-content" aria-labelledby="tab3" ng-switch-when="2" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for UBL Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/ubl.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="ubl"/>
+
+</form>
+</div>
+</div> 
+<!-----------------------UBL Bank ------------------------------>       
+
+<!-----------------------Alfalah Bank ------------------------------>       
+<div role="tabpanel" id="tab4-content" aria-labelledby="tab4" ng-switch-when="3" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for Bank Alfalah</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/alfalah.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="alfalah"/>
+
+</form>
+</div>
+</div>
+<!-----------------------Alfalah Bank ------------------------------>       
+
+
+<!-----------------------MCB Bank ------------------------------>       
+<div role="tabpanel" id="tab5-content" aria-labelledby="tab5" ng-switch-when="4" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for MCB Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/mcb.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="mcb"/>
+
+</form>
+</div>
+</div>
+<!-----------------------MCB Bank ------------------------------>       
+
+<!-----------------------Meezan Bank ------------------------------>       
+<div role="tabpanel" id="tab6-content" aria-labelledby="tab6" ng-switch-when="5" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for Meezan Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/meezan.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="meezan"/>
+
+</form>
+</div>
+</div>
+<!-----------------------Meezan Bank ------------------------------>       
+
+<!-----------------------Askari Bank ------------------------------>       
+<div role="tabpanel" id="tab7-content" aria-labelledby="tab7" ng-switch-when="6" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for Askari Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/askari.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="askari"/>
+
+</form>
+</div>
+</div>
+<!-----------------------Askari Bank ------------------------------>       
+
+<!-----------------------Al-Habib Bank ------------------------------>       
+<div role="tabpanel" id="tab8-content" aria-labelledby="tab8" ng-switch-when="7" md-swipe-left="next()" md-swipe-right="previous()">
+<div id="addr">
+
+<form name="title" method="POST" action="config/submit_cheque.php">
+<table border="0" style="width:320px;border:3px solid #999;float:left;margin-right:15px;">
+<tr>
+	<td colspan="2" class="t_r" align="center"><b>Cheque for Askari Bank</b></td>
+</tr>
+<tr>
+	<td width="120px">
+		<b>Date:</b>
+	</td>
+	<td width="200px"> :
+		<input kendo-date-picker maxlength="30" placeholder="Date"
+		k-format="'dd/MM/yyyy'" 
+		name="date" style="margin:0px;" 
+		required/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Pay:</b>
+	</td>
+	<td>:
+		<input type="text" name="pay" maxlength="30" placeholder="Title" style="margin:0px;"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Amount</b>
+	</td>
+	<td>:
+		<input type="text" name="amount" maxlength="30" placeholder="PKR" style="margin:0px;" id="amount" ng-model="amount" required/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<md-button class="md-raised" style="width:100%;border:1px solid #999;">
+		Create
+		</md-button>
+	</td>
+</tr>
+</table>
+
+<center><img src="img/banks/al-habib.gif" width="45%;" class="img_shad"></center>
+<br/>
+
+<input type="hidden" name="hide_field" value="alhabib"/>
+
+</form>
+</div>
+</div>
+<!-----------------------Al-Habib Bank ------------------------------>       
+
+
+
+
+</ng-switch>
+</div>

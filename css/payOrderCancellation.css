@@ -1,0 +1,16 @@
+body{
+	//border:2px solid red;
+	width:8.27in;
+	height:11.69in;
+	margin:0 auto;
+	//font-family:Times New Roman;
+	//font-size:11pt;
+}
+
+#wrapper{
+	padding:1.2in;
+}
+
+p{
+text-align:justify;
+}

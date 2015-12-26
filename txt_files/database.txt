@@ -1,0 +1,182 @@
+//Creating database
+CREATE DATABASE composeup;
+
+//Creating Tables
+CREATE TABLE cre_cheq
+	(	Id INT AUTO_INCREMENT PRIMARY KEY,
+		amount_num INT(10),
+		amount_word VARCHAR(120),
+		back_name VARCHAR(100),
+		account_title VARCHAR(50)
+	)
+
+CREATE TABLE custAddress
+	(	Id INT AUTO_INCREMENT PRIMARY KEY,
+		name VARCHAR(80),
+		address VARCHAR(100),
+		city VARCHAR(30),
+		phone_num VARCHAR(100),
+		mob_num VARCHAR(100),
+		other VARCHAR(200)
+	)
+
+CREATE TABLE payOrderCan
+	(	Id INT AUTO_INCREMENT PRIMARY KEY,
+		curr_date VARCHAR(30),
+		bank VARCHAR(50),
+		bankAddr VARCHAR(50),
+		po_date VARCHAR(20),
+		amount VARCHAR(20),
+		po_num VARCHAR(20),
+		ship_line VARCHAR(100),
+		acNo VARCHAR(30),
+		ac_title VARCHAR(50),
+		bankAcTitle VARCHAR(50)
+	)
+
+CREATE TABLE payOrderLetter
+	(	Id INT AUTO_INCREMENT PRIMARY KEY,
+		
+		shipping_1 VARCHAR(30),
+		acTitle_1 VARCHAR(30),
+		payAmount_1 VARCHAR(30),
+
+		shipping_2 VARCHAR(30),
+		acTitle_2 VARCHAR(30),
+		payAmount_2 VARCHAR(30),
+
+		shipping_3 VARCHAR(30),
+		acTitle_3 VARCHAR(30),
+		payAmount_3 VARCHAR(30),
+
+		shipping_4 VARCHAR(30),
+		acTitle_4 VARCHAR(30),
+		payAmount_4 VARCHAR(30),
+
+		shipping_5 VARCHAR(30),
+		acTitle_5 VARCHAR(30),
+		payAmount_5 VARCHAR(30),
+
+		shipping_6 VARCHAR(30),
+		acTitle_6 VARCHAR(30),
+		payAmount_6 VARCHAR(30),
+
+		shipping_7 VARCHAR(30),
+		acTitle_7 VARCHAR(30),
+		payAmount_7 VARCHAR(30),
+
+		shipping_8 VARCHAR(30),
+		acTitle_8 VARCHAR(30),
+		payAmount_8 VARCHAR(30),
+
+		shipping_9 VARCHAR(30),
+		acTitle_9 VARCHAR(30),
+		payAmount_9 VARCHAR(30),
+
+		shipping_10 VARCHAR(30),
+		acTitle_10 VARCHAR(30),
+		payAmount_10 VARCHAR(30),
+
+		bankName VARCHAR(30),
+		bankAddress VARCHAR(100),
+		totalAmount VARCHAR(30),
+		date VARCHAR(30),
+		bankAcTitle VARCHAR(30),
+		bankAcNum VARCHAR(30),
+		cheque_num VARCHAR(30),
+		count VARCHAR(12)
+	)
+
+CREATE TABLE bankAddrFormat
+	(	Id INT AUTO_INCREMENT PRIMARY KEY,
+		bankName VARCHAR(50),
+		bankAddr VARCHAR(100),
+		bankAbr VARCHAR(20)
+	)
+
+CREATE TABLE pass(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		username VARCHAR(50),
+		pass VARCHAR(50),
+		roll VARCHAR(20)
+	)
+
+
+CREATE TABLE shipping(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		shipping VARCHAR(80)
+)
+
+CREATE TABLE acTitle(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		bankAcTitle VARCHAR(100)
+)
+
+CREATE TABLE acT_Number(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		bankName VARCHAR(100),
+		bankAcTitle VARCHAR(80),
+		bankAcNumber VARCHAR(30),
+		addr VARCHAR(50)
+)
+
+CREATE TABLE com_reg(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		com_name VARCHAR(50),
+		com_address_1 VARCHAR(90),
+		com_address_2 VARCHAR(90),
+		com_gst_ger_no VARCHAR(50),
+		com_cnic VARCHAR(50),
+		com_ntn VARCHAR(50)
+)
+
+CREATE TABLE exporter_info(
+		Id INT AUTO_INCREMENT PRIMARY KEY,
+		exp_name VARCHAR(50),
+		exp_origin VARCHAR(50)
+)
+
+CREATE TABLE gst(
+	Id INT AUTO_INCREMENT PRIMARY KEY,
+
+	ComName VARCHAR(50),
+	ComAdd1 VARCHAR(150),
+	ComAdd2 VARCHAR(150),
+	Month VARCHAR(50),
+	
+	GstRegNo VARCHAR(50),
+	CNIC VARCHAR(50),
+	NTN VARCHAR(50),
+	ShipBill VARCHAR(50),
+	ShipBillDate VARCHAR(50),
+
+	ExpName VARCHAR(50),
+	ExpOrg VARCHAR(50),
+	LcCont VARCHAR(50),
+	LcContDate VARCHAR(50),
+
+	CRN VARCHAR(50),
+	Date VARCHAR(50),
+	Port VARCHAR(50),
+	TWt VARCHAR(50),
+	TSPK VARCHAR(50),
+
+	ExcRate VARCHAR(50),
+	DollAmount VARCHAR(50),
+	InsCh VARCHAR(50),
+	ShippCh VARCHAR(50),
+
+	LandedCost VARCHAR(50),
+	CD VARCHAR(5),
+	CDAmo VARCHAR(50),
+	ST VARCHAR(5),
+	STAmo VARCHAR(50),
+	AST VARCHAR(5),
+	ASTAmo VARCHAR(50),
+	IT VARCHAR(50),
+	ITAmo VARCHAR(50),
+	OE VARCHAR(50),
+	AP VARCHAR(50),
+	LandedAll VARCHAR(500)
+
+)

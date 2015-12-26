@@ -1,0 +1,28 @@
+body{
+	margin:0px;
+	padding:0px;
+
+}
+
+#wrapper{
+	//background-image:url('../img/NIB-form.jpg') ;
+	//background-size: 600px;
+    //background-repeat: no-repeat;
+	//background-position: center; 
+	width:600px;
+	//border:1px solid red;
+	margin:0 auto;
+	padding:0px;
+	height:850px
+}
+#wrapper table tr td{
+	font-size:12px;
+}
+#word{
+border:none;
+width:350px;
+height:30px;
+}
+.payTable tr td {
+	height:20px;
+}
